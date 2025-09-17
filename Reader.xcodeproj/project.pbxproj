@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B21D12FA2E799CD900EADAAF /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B21D12F92E799CD900EADAAF /* SDWebImage */; };
+		B21D12FC2E799CD900EADAAF /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B21D12FB2E799CD900EADAAF /* SDWebImageMapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B26920EA2E7838130000F6B0 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21D12FC2E799CD900EADAAF /* SDWebImageMapKit in Frameworks */,
+				B21D12FA2E799CD900EADAAF /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +84,6 @@
 				B26920EC2E7838130000F6B0 /* Reader */,
 			);
 			name = Reader;
-			packageProductDependencies = (
-			);
 			productName = Reader;
 			productReference = B26920EA2E7838130000F6B0 /* Reader.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +112,9 @@
 			);
 			mainGroup = B26920E12E7838130000F6B0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B21D12F82E799CD900EADAAF /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B26920EB2E7838130000F6B0 /* Products */;
 			projectDirPath = "";
@@ -150,7 +158,6 @@
 				INFOPLIST_FILE = Reader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +185,6 @@
 				INFOPLIST_FILE = Reader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +341,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B21D12F82E799CD900EADAAF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B21D12F92E799CD900EADAAF /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B21D12F82E799CD900EADAAF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B21D12FB2E799CD900EADAAF /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B21D12F82E799CD900EADAAF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B26920E22E7838130000F6B0 /* Project object */;
 }
